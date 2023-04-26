@@ -1,0 +1,48 @@
+#cadastro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.form{
+    background-color: rgb(9, 0, 17);
+    padding: 40px;
+    border-radius: 2px;
+    width: 280px;
+}
+label{
+    color: antiquewhite;
+}
+
+button{
+    width: 100%;
+    background-color: rgb(130, 17, 153);
+    color: beige;
+    border-radius: 10px;
+    border: 0px;
+}
+h2{
+    color: rgb(198, 148, 245);
+}
+h5{
+    color: rgb(61, 167, 75);
+    padding-left: 50px ;
+}
+input{
+    width: 90%;
+    margin-top: 4px;
+    padding: 2px;
+    border: 1px solid rgb(0, 0, 0);
+}
+select{
+    width: 90%;
+    margin-top: 4px;
+    padding: 5px;
+    border: 1px solid rgb(0, 0, 0);
+}
+body{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(42, 4, 78);
+}
