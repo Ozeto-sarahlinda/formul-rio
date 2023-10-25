@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Formulário de Cadastro E-commerce</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" type='text/css' media='screen'>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <h2>Não tem uma conta?</h2>
+    <h4>Faça seu cadastro aqui!</h4>
+    <br>
+    <br>
+    <form>
+        <div class="col-10">
+            <label class="form-label">Nome:</label>
+            <input type="text" class="form-control" id="nameis">
+          </div>
+          <br>
+        <div class="do-lado">
+          <div class="col-md-2">
+            <label for="gender" class="form-label">Gênero:</label>
+            <select id="gender" class="form-select">
+              <option>Mulher</option>
+              <option>Homem</option>
+              <option>Prefiro não informar</option>
+            </select>
+          </div>
+        <div class="col-md-2">
+            <label for="date" class="form-label">Data de nascimento:</label>
+            <input type="date" id="borndate" name="date">
+          </div>
+        </div>
+        <br>
+          <div class="col-10">
+            <label for="telefone" class="form-label">Telefone</label>
+            <input type="tel" class="form-control" id="telefone">
+          </div>
+        <div class="col-10">
+            <label for="email" class="form-label">E-mail:</label>
+            <input type="email" class="form-control" id="email">
+          </div>
+        <div class="col-10">
+            <label for="password" class="form-label">Senha:</label>
+            <input type="password" class="form-control" id="subject">
+          </div>
+        <div class="col-10">
+            <label for="password" class="form-label">Confirmar senha:</label>
+            <input type="password" class="form-control" id="confirmsenha">
+          </div>
+        <br>
+        <div class="do-lado">
+          <div class="col-3">
+            <label for="cpf" class="form-label">CPF:</label>
+            <input type="text" class="form-control" id="cpf">
+          </div>
+        <div class="col-3">
+        <label for="inputCEP" class="form-label">CEP:</label>
+        <input type="text" class="form-control" id="cep">
+      </div>
+    </div>
+      <div class="do-lado">
+      <div class="col-10">
+          <label for="inputAddress" class="form-label">Rua:</label>
+          <input type="text" class="form-control" id="rua">
+        </div>
+        <div class="col-1">
+          <label for="inputZip" class="form-label">Complemento:</label>
+          <input type="text" class="form-control" id="complemento">
+        </div>
+      </div>
+        <div class="col-10">
+          <label for="inputAddress2" class="form-label">Bairro:</label>
+          <input type="text" class="form-control" id="bairro">
+        </div>
+      <div class="do-lado">
+        <div class="col-10">
+          <label for="inputCity" class="form-label">Cidade:</label>
+          <input type="text" class="form-control" id="cidade">
+        </div>
+        <div class="col-1">
+            <label for="estado" class="form-label">Estado:</label>
+            <input type="text" class="form-control" id="estado">
+        </div>
+      </div>
+        <br>
+        <br>
+        <div class="col-12">
+          <button type="button" class="btn btn-primary" onclick="Verificar()">Cadastrar</button>
+        </div>
+      </form>
+      <script src='form.js'></script>
+   </body>
+</html>
