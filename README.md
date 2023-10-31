@@ -39,17 +39,17 @@ Quando o usuário clicar no botão de caastrar a função de verificar vai anali
 
 ![*imagem do cod](IMG/verific.png)
 
-**async e await**
+**async e await**  
 A função de PesquisarCep é dita como assíncrona, mas afinal, o que seria uma função assíncrona? 
 Antes de tudo é preciso relembrar que uma função síncrona é executada em tempo real, uma função assíncrona seria o oporto disso.
 
 No código, o async e o await trabalham juntos, de certa forma. A função async executa e o await faz essa execução pausar. No nosso caso, a funçao async serve para declarar onde seria consultado o CEP, no site da viacep, e o await da uma pequena pausa nessa tarefa para verificar se o CEP é válido.
 
- **fetch**
+ **fetch**  
 Agora que sabemos onde é consultado o CEP, é preciso fazer uma ligação entre o nosso site e o site da viacep. O elemento fetch é quem faz essa ligação. 
 
 
- **hasOwnProperty**
+ **hasOwnProperty**  
 Após criarmos essa ligação, foi usado o hasOwnProperty para verificar se o que foi digitado existe ou não, ele verifica dentro da variável e depois retorna um alert dependendo do resultado.É como se o fetch começasse o trabalho e o hasOwnProperty terminasse. 
 
 
@@ -58,7 +58,7 @@ Após criarmos essa ligação, foi usado o hasOwnProperty para verificar se o qu
 
 ![*imG do cod](IMG/addeven.png)
 
-**addEventListener('focusout')**
+**addEventListener('focusout')**  
 Quando o CEP for validade e os campos forem preenchidos automaticamente, ao passar de um campo para o outro, o formulário limpa antes de preencher com novas informações. Explicando brevemente, adicionamos um evento ao código utlizando o **addEventListener** e especificamos qual evento seria, usando o **focusout**, que atua quando o foco saí da linha selecionada, enquanto a linha estiver selecionada nada irá acontecer. 
 
 
