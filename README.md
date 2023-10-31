@@ -6,7 +6,7 @@
 [Autores](#autores)  
 
 # PROJETO FORMULÁRIO DE CADASTRO: Introdução
-![imagem de capa](IMG-FORM/páginainic.png)
+![imagem de capa](IMG/páginainic.png)
 
 Anteriormente criamos um simples formulário para trbalhar a verificação de senhar, utilizando as tecnologias do Javascript, adicionamos ao formulário a verificação de CEP, o preenchimento automático dos campos de endereço e também a verificação se todos os campos foram preenchidos.
 
@@ -18,26 +18,26 @@ Além das configurações básicas do HTML e CSS, para deixar a página mais agr
 Mas afinal, o que é **expressão regular**? 
 De uma forma mais resumida, expressões regulares são como padrões utilizados para selecionar certas combinações de caracteres. Neste código, utilizamos ela para verificar se o que foi digitado tem a quantidade certa de números e se contém apenas números. 
 
-![*imagem a expressão](IMG-FORM/expressaoreg.png)
+![*imagem a expressão](IMG/expressaoreg.png)
 
 É semelhante a um compartimento com nove entradas. Com a expressão regular indicamos que esse compartimento terá nove entradas e, na segunda linha, que só se pode ocupar oito entradas do compartimento (número de digitos de um CEP) com números apenas. 
 
 ### STRICT MODE
-![*imagem do strict](IMG-FORM/sim.png)
+![*imagem do strict](IMG/sim.png)
 No início do código em JavaScript, determinamos que estariamos usando o **strict mode**, o que isso beneficia no código? O strict mode sinaliza potenciais problemas encontrados na aplicação e identifica caso haja algo perigoso ou que pode gerar erros, usando o strict mode o código nem executará se identificar algo de errado.
 
 
 ### VERIFICAÇÃO
-![*imagem da pagina](IMG-FORM/preenchercampos.png)
+![*imagem da pagina](IMG/preenchercampos.png)
 
-![*imagem do código](IMG-FORM/ifelse.png)
+![*imagem do código](IMG/ifelse.png)
 
 Quando o usuário clicar no botão de caastrar a função de verificar vai analisar se todos os campos ditos como obrigatórios foram digitados e se as senhas foram iguais, para isso demos o nome do id de cada campo e depois usando **IF** e **ELSE** declaramos que só seria aceito caso todos fossem preenchidos, o mesmo com as senhas.
 
 ### VALIDANDO O CEP
-![*imagem da pagina](IMG-FORM/func1.png)
+![*imagem da pagina](IMG/func1.png)
 
-![*imagem do cod](IMG-FORM/verific.png)
+![*imagem do cod](IMG/verific.png)
 
 **async e await**
 A função de PesquisarCep é dita como assíncrona, mas afinal, o que seria uma função assíncrona? 
@@ -54,9 +54,9 @@ Após criarmos essa ligação, foi usado o hasOwnProperty para verificar se o qu
 
 
 ### LIMPAR E PREENCHER FORMULÁRIO
-![*img da pag](IMG-FORM/video.mp4)
+![*img da pag](IMG/video.mp4)
 
-![*imG do cod](IMG-FORM/addeven.png)
+![*imG do cod](IMG/addeven.png)
 
 **addEventListener('focusout')**
 Quando o CEP for validade e os campos forem preenchidos automaticamente, ao passar de um campo para o outro, o formulário limpa antes de preencher com novas informações. Explicando brevemente, adicionamos um evento ao código utlizando o **addEventListener** e especificamos qual evento seria, usando o **focusout**, que atua quando o foco saí da linha selecionada, enquanto a linha estiver selecionada nada irá acontecer. 
