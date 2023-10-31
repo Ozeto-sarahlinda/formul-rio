@@ -6,60 +6,60 @@
 [Autores](#autores)  
 
 # PROJETO FORMULÁRIO DE CADASTRO: Introdução
-![]()
+![imagem de capa](IMG-FORM/páginainic.png)
 
 Anteriormente criamos um simples formulário para trbalhar a verificação de senhar, utilizando as tecnologias do Javascript, adicionamos ao formulário a verificação de CEP, o preenchimento automático dos campos de endereço e também a verificação se todos os campos foram preenchidos.
 
 ## Funcionalidades
-O usuário digita uma determinada senha e a digita novamente para confirmação, caso as senhas não sejam iguais o código irá alertar o usuário sobre tal. 
+Além das configurações básicas do HTML e CSS, para deixar a página mais agradável estéticamente, usamos alguns recursos de Javascript. Abaixo você encontra quais foram e como cada um atua dentro do código.
 
 
 ### EXPRESSÃO REGULAR
 Mas afinal, o que é **expressão regular**? 
 De uma forma mais resumida, expressões regulares são como padrões utilizados para selecionar certas combinações de caracteres. Neste código, utilizamos ela para verificar se o que foi digitado tem a quantidade certa de números e se contém apenas números. 
 
-![*imagem a expressão]()
+![*imagem a expressão](IMG-FORM/expressaoreg.png)
 
 É semelhante a um compartimento com nove entradas. Com a expressão regular indicamos que esse compartimento terá nove entradas e, na segunda linha, que só se pode ocupar oito entradas do compartimento (número de digitos de um CEP) com números apenas. 
 
 ### STRICT MODE
-![*imagem do strict]()
+![*imagem do strict](IMG-FORM/sim.png)
 No início do código em JavaScript, determinamos que estariamos usando o **strict mode**, o que isso beneficia no código? O strict mode sinaliza potenciais problemas encontrados na aplicação e identifica caso haja algo perigoso ou que pode gerar erros, usando o strict mode o código nem executará se identificar algo de errado.
 
 
-### VERIFICAÇAÕ DE SENHAS
-![*imagem da pagina]()
+### VERIFICAÇÃO
+![*imagem da pagina](IMG-FORM/preenchercampos.png)
 
-![*imagem do código]()
+![*imagem do código](IMG-FORM/ifelse.png)
+
+Quando o usuário clicar no botão de caastrar a função de verificar vai analisar se todos os campos ditos como obrigatórios foram digitados e se as senhas foram iguais, para isso demos o nome do id de cada campo e depois usando **IF** e **ELSE** declaramos que só seria aceito caso todos fossem preenchidos, o mesmo com as senhas.
 
 ### VALIDANDO O CEP
-![imagem da pag]()
+![*imagem da pagina](IMG-FORM/func1.png)
 
-![imagem do cod]()
+![*imagem do cod](IMG-FORM/verific.png)
 
-**async**
+**async e await**
+A função de PesquisarCep é dita como assíncrona, mas afinal, o que seria uma função assíncrona? 
+Antes de tudo é preciso relembrar que uma função síncrona é executada em tempo real, uma função assíncrona seria o oporto disso.
 
-**await**
+No código, o async e o await trabalham juntos, de certa forma. A função async executa e o await faz essa execução pausar. No nosso caso, a funçao async serve para declarar onde seria consultado o CEP, no site da viacep, e o await da uma pequena pausa nessa tarefa para verificar se o CEP é válido.
 
  **fetch**
+Agora que sabemos onde é consultado o CEP, é preciso fazer uma ligação entre o nosso site e o site da viacep. O elemento fetch é quem faz essa ligação. 
+
 
  **hasOwnProperty**
-
-Outro evento que acontece é que o código reconhece caso o usuário digitar um CEP inexistente. Para que isso aconteça foi feito uma espécie de ponte entre o nosso código e o site da viacep, usando o **fetch**, que possibilita fazer chamadas com APIs externas de formas simples e assíncronas. Após criarmos essa ligação, foi usado o **hasOwnProperty** para verificar se o que foi digitado existe ou não, ele verifica dentro da variável e depois retorna um alert dependendo do resultado.É como se o fetch começasse o trabalho e o hasOwnProperty terminasse. 
+Após criarmos essa ligação, foi usado o hasOwnProperty para verificar se o que foi digitado existe ou não, ele verifica dentro da variável e depois retorna um alert dependendo do resultado.É como se o fetch começasse o trabalho e o hasOwnProperty terminasse. 
 
 
 ### LIMPAR E PREENCHER FORMULÁRIO
-![img da pag]()
+![*img da pag](IMG-FORM/video.mp4)
 
-![im do cod]()
+![*imG do cod](IMG-FORM/addeven.png)
 
 **addEventListener('focusout')**
-
-**focusout**
-
-Quando o CEP for validado, ao passar de um campo para o outro, o formulário limpa antes de preencher com novas informações e isso ocorre graças ao **addEventListener('focusout')**. Explicando brevemente nós adicionamos um evento e o **focusout** atua quando o foco saí da linha selecionada, então ele só vai executar esse comando quando o foco sair da linha, enquanto a linha estiver selecionada nada vai acontecer.
-
-Após limpar, o formulário preenche com novas informações e o mesmo comando anterior faz essa tarefa.
+Quando o CEP for validade e os campos forem preenchidos automaticamente, ao passar de um campo para o outro, o formulário limpa antes de preencher com novas informações. Explicando brevemente, adicionamos um evento ao código utlizando o **addEventListener** e especificamos qual evento seria, usando o **focusout**, que atua quando o foco saí da linha selecionada, enquanto a linha estiver selecionada nada irá acontecer. 
 
 
 ## Tecnologias utilizadas
